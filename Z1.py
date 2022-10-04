@@ -16,7 +16,7 @@ def listofmnoz(number):
     while i <= num:
         if num % i == 0:
             lst.append(i)
-            num //= i
+            num = num / i
             i = 2
         else:
             i += 1
@@ -26,4 +26,4 @@ def listofmnoz(number):
 number = InputNumber()
 list = listofmnoz(number)
 
-print(f"Простые множители числа {number} приведены в списке: {list}")
+print(f"Простые множители числа {number} : {list}")
